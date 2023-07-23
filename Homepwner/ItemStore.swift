@@ -33,4 +33,8 @@ class ItemStore {
         allItems.remove(at: fromIndex)
         allItems.insert(movedItem, at: toIndex)
     }
+    
+    init() {
+        allItems.append(Item(random: true))
+    }
 }
